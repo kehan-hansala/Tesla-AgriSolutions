@@ -1,4 +1,4 @@
-import { Award, Users, Target, TrendingUp, CheckCircle2, Leaf } from 'lucide-react';
+import { Award, Users, Target,CheckCircle2, Leaf } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 export function About() {

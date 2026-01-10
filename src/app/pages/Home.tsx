@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Sprout, Award, Users, TrendingUp, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Sprout, Award, Users, TrendingUp, ArrowRight } from 'lucide-react';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 export function Home() {
