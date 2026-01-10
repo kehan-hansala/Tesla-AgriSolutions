@@ -21,13 +21,10 @@ export function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-12 h-12 bg-gradient-to-br from-green-600 to-green-800 rounded-lg flex items-center justify-center">
-              <span className="text-white text-xl font-bold">T</span>
+            <div className="w-50 h-50 flex items-center justify-center">
+              <img src="public\logo.png" alt="logo" />
             </div>
-            <div>
-              <span className="text-2xl font-bold text-green-800">TESLA</span>
-              <span className="text-sm text-gray-600 block -mt-1">Agri Solutions</span>
-            </div>
+      
 
       
           </Link>
