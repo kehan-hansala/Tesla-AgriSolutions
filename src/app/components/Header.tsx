@@ -22,7 +22,7 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-50 h-50 flex items-center justify-center">
-              <img src="public\logo.png" alt="logo" />
+              <img src="/logo.png" alt="logo" />
             </div>
       
 
