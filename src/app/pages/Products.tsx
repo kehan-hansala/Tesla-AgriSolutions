@@ -13,13 +13,14 @@ export function Products() {
     { id: 'hybrid', name: 'Hybrid Varieties' },
   ];
 
+
   const products = [
     {
       id: 1,
       name: 'Premium Basmati Paddy',
       category: 'paddy',
       image: 'https://images.unsplash.com/photo-1655903724829-37b3cd3d4ab9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyaWNlJTIwcGFkZHklMjBmaWVsZHxlbnwxfHx8fDE3NjgwMjExOTV8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      price: '$45/kg',
+      price: 'Rs:45/kg',
       description: 'High-yield basmati variety with excellent aroma and grain length.',
       features: ['95% germination', 'Disease resistant', '120-day maturity'],
     },
@@ -28,7 +29,7 @@ export function Products() {
       name: 'Hybrid Tomato Seeds',
       category: 'vegetables',
       image: 'https://images.unsplash.com/photo-1647553756926-21a62021b9d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2ZWdldGFibGUlMjBzZWVkc3xlbnwxfHx8fDE3Njc5ODA4MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      price: '$28/pack',
+      price: 'Rs:28/pack',
       description: 'Premium hybrid tomato seeds for commercial cultivation.',
       features: ['High yield', 'Pest resistant', '70-day harvest'],
     },
@@ -37,7 +38,7 @@ export function Products() {
       name: 'Organic Wheat Seeds',
       category: 'paddy',
       image: 'https://images.unsplash.com/photo-1660439613402-856c754278c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZWVkcyUyMGdyYWluc3xlbnwxfHx8fDE3NjgwMjExOTR8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      price: '$35/kg',
+      price: 'Rs:35/kg',
       description: 'Certified organic wheat seeds for sustainable farming.',
       features: ['Organic certified', '90% germination', '150-day maturity'],
     },
@@ -46,7 +47,7 @@ export function Products() {
       name: 'Sweet Corn Seeds',
       category: 'vegetables',
       image: 'https://images.unsplash.com/photo-1673200674067-1923f239194d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXJtJTIwY3JvcHMlMjBoYXJ2ZXN0fGVufDF8fHx8MTc2Nzk1NDQ5OXww&ixlib=rb-4.1.0&q=80&w=1080',
-      price: '$22/pack',
+      price: 'Rs:22/pack',
       description: 'Super sweet variety with excellent taste and texture.',
       features: ['Sweet variety', 'High sugar content', '80-day harvest'],
     },
@@ -55,7 +56,7 @@ export function Products() {
       name: 'Hybrid Rice Paddy',
       category: 'hybrid',
       image: 'https://images.unsplash.com/photo-1655903724829-37b3cd3d4ab9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyaWNlJTIwcGFkZHklMjBmaWVsZHxlbnwxfHx8fDE3NjgwMjExOTV8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      price: '$52/kg',
+      price: 'Rs:52/kg',
       description: 'Superior hybrid variety with maximum yield potential.',
       features: ['Hybrid vigor', 'Drought tolerant', '110-day maturity'],
     },
@@ -64,7 +65,7 @@ export function Products() {
       name: 'Bell Pepper Seeds',
       category: 'vegetables',
       image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcmdhbmljJTIwZmFybWluZ3xlbnwxfHx8fDE3Njc5NDQ0Njh8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      price: '$32/pack',
+      price: 'Rs:32/pack',
       description: 'Colorful bell peppers with thick walls and great flavor.',
       features: ['Multiple colors', 'Thick walls', '75-day harvest'],
     },
@@ -73,7 +74,7 @@ export function Products() {
       name: 'Long Grain Rice',
       category: 'paddy',
       image: 'https://images.unsplash.com/photo-1660439613402-856c754278c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZWVkcyUyMGdyYWluc3xlbnwxfHx8fDE3NjgwMjExOTR8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      price: '$38/kg',
+      price: 'Rs:38/kg',
       description: 'Premium long grain variety perfect for export quality.',
       features: ['Export quality', '94% germination', '130-day maturity'],
     },
@@ -82,7 +83,7 @@ export function Products() {
       name: 'Cucumber Seeds',
       category: 'vegetables',
       image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcmdhbmljJTIwZmFybWluZ3xlbnwxfHx8fDE3Njc5NDQ0Njh8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      price: '$18/pack',
+      price: 'Rs:18/pack',
       description: 'Crisp and fresh cucumber variety for salads.',
       features: ['Crisp texture', 'High yield', '55-day harvest'],
     },
@@ -91,7 +92,7 @@ export function Products() {
       name: 'Hybrid Wheat',
       category: 'hybrid',
       image: 'https://images.unsplash.com/photo-1673200674067-1923f239194d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXJtJTIwY3JvcHMlMjBoYXJ2ZXN0fGVufDF8fHx8MTc2Nzk1NDQ5OXww&ixlib=rb-4.1.0&q=80&w=1080',
-      price: '$48/kg',
+      price: 'RS:48/kg',
       description: 'Advanced hybrid wheat with superior yield characteristics.',
       features: ['High protein', 'Disease resistant', '140-day maturity'],
     },
@@ -103,6 +104,11 @@ export function Products() {
                          product.description.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesSearch;
   });
+
+  const loadModel = () => {
+    // Placeholder for loading 3D model logic
+  
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">

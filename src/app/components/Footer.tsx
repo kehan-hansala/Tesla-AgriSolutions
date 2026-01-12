@@ -8,14 +8,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-green-600 to-green-800 rounded-lg flex items-center justify-center">
-                <span className="text-white text-lg font-bold">T</span>
-              </div>
-              <div>
-                <span className="text-xl font-bold text-white">TESLA</span>
-                <span className="text-sm text-gray-400 block -mt-1">Agri Solutions</span>
-              </div>
+            <div className="flex items-center  mb-4 h-10">
+               <img src="/logo.png" alt="Tesla Agri Solutions" className='mr-4 h-60' />
+              
             </div>
             <p className="text-sm text-gray-400 mb-4">
               Premium quality seeds for sustainable agriculture. Growing together for a better tomorrow.
@@ -80,11 +75,11 @@ export function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start space-x-2">
                 <MapPin size={18} className="text-green-500 mt-0.5 flex-shrink-0" />
-                <span>123 Agriculture Avenue, Green Valley, State 12345</span>
+                <span>Anuradhapura , New BusStand</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone size={18} className="text-green-500 flex-shrink-0" />
-                <span>+1 (555) 123-4567</span>
+                <span>+94 01234567</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail size={18} className="text-green-500 flex-shrink-0" />
