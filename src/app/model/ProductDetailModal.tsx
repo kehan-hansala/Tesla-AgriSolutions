@@ -1,9 +1,26 @@
-// components/ProductDetailModal.tsx
 import React, { useState } from 'react';
 import { X, ShoppingCart, Check, Minus, Plus } from 'lucide-react';
-import type { ProductDetailModalProps } from '../types/product';
 
 type Unit = 'kg' | 'quintal' | 'ton';
+
+interface Product {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  image: string;
+  images?: string[];
+  features: string[];
+  specifications?: {
+    [key: string]: string;
+  };
+}
+
+interface ProductDetailModalProps {
+  product: Product;
+  isOpen: boolean;
+  onClose: () => void;
+}
 
 const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product, isOpen, onClose }) => {
   const [quantity, setQuantity] = useState<number>(1);
@@ -22,7 +39,8 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product, isOpen
   };
 
   const handleOrder = (): void => {
-    alert(`Order placed!\nProduct: ${product.name}\nQuantity: ${quantity} ${selectedUnit}\nTotal: Rs:${totalPrice.toLocaleString()}`);
+    alert(`Order placed!\nProduct: ${product.name}\nQuantity: ${quantity} ${selectedUnit}\nTotal: Rs.${totalPrice.toLocaleString()}`);
+    onClose();
   };
 
   return (
@@ -48,16 +66,18 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product, isOpen
                 alt={product.name}
                 className="w-full h-96 object-cover rounded-lg shadow-md"
               />
-              <div className="grid grid-cols-4 gap-2 mt-4">
-                {product.images?.map((img, i) => (
-                  <img 
-                    key={i}
-                    src={img} 
-                    alt={`${product.name} view ${i + 1}`}
-                    className="w-full h-20 object-cover rounded border-2 border-gray-200 hover:border-green-500 cursor-pointer transition-colors"
-                  />
-                ))}
-              </div>
+              {product.images && product.images.length > 0 && (
+                <div className="grid grid-cols-4 gap-2 mt-4">
+                  {product.images.map((img, i) => (
+                    <img 
+                      key={i}
+                      src={img} 
+                      alt={`${product.name} view ${i + 1}`}
+                      className="w-full h-20 object-cover rounded border-2 border-gray-200 hover:border-green-500 cursor-pointer transition-colors"
+                    />
+                  ))}
+                </div>
+              )}
             </div>
 
             <div>
@@ -95,7 +115,7 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product, isOpen
               {/* Price */}
               <div className="bg-gray-50 rounded-lg p-4 mb-6">
                 <div className="text-4xl font-bold text-green-600 mb-2">
-                  Rs:{product.price}/kg
+                  Rs.{product.price}/kg
                 </div>
                 <p className="text-gray-500 text-sm">Price may vary based on quantity</p>
               </div>
@@ -159,7 +179,7 @@ const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product, isOpen
                 </label>
                 <div className="p-3 bg-green-50 border border-green-200 rounded-lg">
                   <span className="text-2xl font-bold text-green-600">
-                    Rs:{totalPrice.toLocaleString()}
+                    Rs.{totalPrice.toLocaleString()}
                   </span>
                 </div>
               </div>
