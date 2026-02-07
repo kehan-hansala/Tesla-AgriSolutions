@@ -44,7 +44,7 @@ export function About() {
 
   const team = [
     {
-      name: 'Dr. Rajesh Kumar',
+      name: 'Dr. Rajesh Kumara',
       role: 'Chief Agricultural Officer',
       image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvcmdhbmljJTIwZmFybWluZ3xlbnwxfHx8fDE3Njc5NDQ0Njh8MA&ixlib=rb-4.1.0&q=80&w=1080',
     },
