@@ -67,7 +67,7 @@ export function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">About Us</h1>
           <p className="text-xl text-white/90 max-w-2xl">
-            Leading the way in agricultural excellence since 2003
+            Leading the way in agricultural excellence since 2025
           </p>
         </div>
       </div>
