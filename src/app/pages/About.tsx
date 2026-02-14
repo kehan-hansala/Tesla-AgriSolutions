@@ -98,7 +98,7 @@ export function About() {
                   <div className="text-gray-600">Seed Varieties</div>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold text-green-700 mb-2">15</div>
+                  <div className="text-4xl font-bold text-green-700 mb-2">25</div>
                   <div className="text-gray-600">States Served</div>
                 </div>
               </div>
